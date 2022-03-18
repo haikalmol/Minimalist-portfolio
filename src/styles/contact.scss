@@ -1,0 +1,97 @@
+@import "colors";
+@import "screenSize";
+
+.contactPage {
+  @include screen(extra-large) {
+    margin: 0 auto;
+    width: 1107px;
+  }
+  @include screen(large) {
+    padding: 0 11.5%;
+  }
+  @include screen(med) {
+    padding: 0 5.7%;
+  }
+  @include screen(small) {
+    padding: 0 8.5%;
+  }
+}
+
+.label {
+  font-weight: bold;
+  font-size: 0.8125rem;
+  margin-bottom: 24px;
+}
+
+.input {
+  background-color: rgba($GrayishDarkBlue, $alpha: 0.1);
+  border: none;
+  outline: none;
+  padding: 17px;
+  min-height: 48px;
+  width: 100%;
+  color: $GrayishDarkBlue;
+  margin-bottom: 24px;
+}
+
+.formBtn {
+  background-color: $DarkBlue;
+  padding: 17px 24px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.16rem;
+  border: 0;
+  cursor: pointer;
+}
+
+h2 {
+  @include screen(med) {
+    margin-bottom: 24px;
+  }
+  @include screen(small) {
+    margin-bottom: 24px;
+  }
+}
+
+.getInTouch,
+.contactForm {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  border-top: 1px solid rgba($GrayishDarkBlue, $alpha: 0.15);
+  padding: 48px 0;
+  @include screen(med) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  @include screen(small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .socialIcons {
+    margin-top: 68px;
+    width: 104px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    path {
+      fill: $GrayishDarkBlue;
+    }
+    path {
+      transition: fill 350ms;
+      cursor: pointer;
+    }
+    a:hover {
+      path {
+        fill: $SlightlyDesaturatedCyan;
+      }
+    }
+  }
+}
+
+.contactForm {
+  margin-bottom: 61px;
+}

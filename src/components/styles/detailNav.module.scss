@@ -1,0 +1,82 @@
+@import "colors";
+@import "screenSize";
+
+.detailNav{
+    display: flex;
+   justify-content: space-between;
+    border-top: 1px solid rgba($GrayishDarkBlue, $alpha: 0.15);
+    border-bottom: 1px solid rgba($GrayishDarkBlue, $alpha: 0.15);
+    margin-top: 64px; 
+    margin-bottom: 115px;
+}
+
+.prevDetail ,.nextDetail{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 39px 0;
+    p{
+        color: rgba($GrayishDarkBlue, $alpha: 0.5);
+    }
+    @include screen(small) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+        svg{
+            margin: 0;
+            margin-bottom: 16px;
+        }
+      }
+}
+
+.nextDetail{
+    grid-template-areas: "textarea arrow";
+    text-align: right;
+    div{
+        grid-area: textarea;
+    }
+    svg{
+        grid-area: arrow;
+    }
+    @include screen(small) {
+        grid-template-areas: "arrow" "textarea";
+        justify-items: flex-end;
+    }
+}
+
+.nextDetail:hover{
+    div{
+        opacity: 0.7;
+        
+    }
+    svg{
+        margin-left: 15px;
+    }
+}
+
+.prevDetail:hover{
+    div{
+        opacity: 0.7;
+    }
+    svg{
+        margin-right: 15px;
+    }
+}
+
+.prevDetail svg{
+    margin-right: 32px;
+    transition: 350ms margin-right;
+
+}
+
+.nextDetail svg{
+    margin-left: 32px;
+    transition: 350ms margin-left;
+
+}
+
+.separation{
+    content: "";
+    width: 1px;
+    background-color: rgba($GrayishDarkBlue, $alpha: 0.15);
+}
+

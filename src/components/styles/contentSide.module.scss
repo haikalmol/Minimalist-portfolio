@@ -1,0 +1,38 @@
+@import "colors";
+@import "screenSize";
+
+.contentSide {
+  padding: 46px 0;
+  border-top: 1px solid rgba($GrayishDarkBlue, $alpha: 0.15);
+  border-bottom: 1px solid rgba($GrayishDarkBlue, $alpha: 0.15);
+  height: fit-content;
+  @include screen(small) {
+    padding: 51px 0;
+  }
+  h2 {
+    margin-bottom: 38px;
+    grid-area: title;
+  }
+  .content {
+    margin-bottom: 23px;
+    grid-area: cont;
+    @include screen(med) {
+      margin-bottom: 38px;
+    }
+    @include screen(small) {
+      margin-bottom: 38px;
+    }
+  }
+  
+  .highlight {
+    color: $SlightlyDesaturatedCyan;
+    margin-bottom: 16px;
+    
+  }
+  .highlights{
+    grid-area: highlit;
+  }
+  a{
+    grid-area: btn;
+  }
+}

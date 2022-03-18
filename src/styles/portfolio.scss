@@ -1,0 +1,55 @@
+@import "colors";
+@import "screenSize";
+
+.portfolioPage {
+  @include screen(extra-large) {
+    margin: 0 auto;
+    width: 1107px;
+  }
+  @include screen(large) {
+    padding: 0 11.5%;
+  }
+  @include screen(med) {
+    padding: 0 5.7%;
+  }
+  @include screen(small) {
+    padding: 0 8.5%;
+  }
+}
+
+.projectsContainer{
+display: grid;
+grid-template-rows: auto;
+gap: 80px;
+margin-bottom: 150px;
+}
+
+.project{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 91.5%;
+  gap: 125px;
+  align-items: center;
+
+  .projectImg{
+    max-height: 500px;
+  }
+
+  @include screen(med) {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 69px;
+    width: 100%;
+    .projectImg{
+      max-height: 314px;
+    }
+  }
+
+  @include screen(small) {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.project.right{
+  justify-self: flex-end;
+}

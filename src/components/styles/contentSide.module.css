@@ -1,0 +1,37 @@
+.contentSide {
+  padding: 46px 0;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+@media screen and (max-width: 489px) {
+  .contentSide {
+    padding: 51px 0;
+  }
+}
+
+.contentSide h2 {
+  margin-bottom: 29px;
+}
+
+.contentSide .content {
+  margin-bottom: 67px;
+}
+
+@media screen and (max-width: 768px) {
+  .contentSide .content {
+    margin-bottom: 38px;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .contentSide .content {
+    margin-bottom: 38px;
+  }
+}
+
+.contentSide .highlight {
+  color: #5fb4a2;
+  margin-top: 38px;
+}
+/*# sourceMappingURL=contentSide.module.css.map */

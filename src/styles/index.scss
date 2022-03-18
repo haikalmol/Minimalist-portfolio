@@ -1,0 +1,153 @@
+@import "colors";
+@import "screenSize";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: $BG;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Ibarra Real Nova", serif;
+  color: $GrayishDarkBlue;
+}
+
+p {
+  font-family: "Public Sans", sans-serif;
+  color: $GrayishDarkBlue;
+  font-weight: normal;
+  line-height: 1.875rem;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3.125rem;
+  line-height: 3.125rem;
+  font-weight: bold;
+  letter-spacing: -0.45px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 2.625rem;
+  font-weight: bold;
+  letter-spacing: -0.32px;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  font-weight: normal;
+  letter-spacing: -0.29px;
+}
+
+.homePage {
+  @include screen(extra-large) {
+    margin: 0 auto;
+    width: 1107px;
+  }
+  @include screen(large) {
+    padding: 0 11.5%;
+  }
+  @include screen(med) {
+    padding: 0 5.7%;
+  }
+  @include screen(small) {
+    padding: 0 8.5%;
+  }
+}
+
+.hero {
+  position: relative;
+  @include screen(extra-large) {
+    margin-bottom: 150px;
+  }
+  @include screen(large) {
+    margin-bottom: 150px;
+  }
+  @include screen(med) {
+    margin-bottom: 96px;
+  }
+  @include screen(small) {
+    margin-bottom: 96px;
+  }
+
+  .gatsby-image-wrapper picture img{
+    object-position: center 25% !important;
+    @include screen(small) {
+      object-position: center center !important;
+    }
+  }
+
+  .heroContent {
+    background-color: $BG;
+    position: absolute;
+    bottom: 0;
+    width: 445px;
+    @include screen(extra-large) {
+      width: 445px;
+    }
+    @include screen(large) {
+      width: 445px;
+    }
+    @include screen(med) {
+      width: 514px;
+    }
+    @include screen(small) {
+      position: initial;
+      width: 100%;
+    }
+    h1 {
+      margin-top: 59px;
+      margin-bottom: 38px;
+    }
+  }
+}
+
+.aboutSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 125px;
+  width: 91%;
+  margin-bottom: 150px;
+  align-items: center;
+  
+  @include screen(med) {
+    gap: 69px;
+    width: 100%;
+    margin-bottom: 100px;
+  }
+  @include screen(small) {
+    gap: 32px;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    margin-bottom: 119px;
+  }
+  .portfolioImgHome{
+    height: 600px;
+    @include screen(small) {
+      height: 346px;
+    }
+    
+  }
+  
+}

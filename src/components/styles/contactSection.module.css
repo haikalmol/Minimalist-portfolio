@@ -1,0 +1,45 @@
+.contactSection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 350px 1fr auto;
+      grid-template-columns: 350px 1fr auto;
+  gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+
+@media screen and (max-width: 489px) {
+  .contactSection {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+}
+
+.contactSection .horizLine {
+  height: 1px;
+  background-color: rgba(51, 50, 61, 0.15);
+}
+
+@media screen and (max-width: 489px) {
+  .contactSection .horizLine {
+    display: none;
+  }
+}
+
+.contactSection a {
+  justify-self: flex-end;
+}
+
+@media screen and (max-width: 489px) {
+  .contactSection a {
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+}
+/*# sourceMappingURL=contactSection.module.css.map */

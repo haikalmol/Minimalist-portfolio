@@ -1,0 +1,32 @@
+@import "colors";
+@import "screenSize";
+
+.contactSection {
+  display: grid;
+  grid-template-columns: 350px 1fr auto;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 80px;
+  @include screen(med) {
+    grid-template-columns: auto 1fr auto;
+  }
+  @include screen(small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 28px;
+    text-align: center;
+  }
+  .horizLine {
+    height: 1px;
+    background-color: rgba($GrayishDarkBlue, $alpha: 0.15);
+    @include screen(small) {
+      display: none;
+    }
+  }
+  a {
+    justify-self: flex-end;
+    @include screen(small) {
+      justify-self: center;
+    }
+  }
+}

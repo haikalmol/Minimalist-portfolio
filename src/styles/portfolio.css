@@ -1,0 +1,25 @@
+@media screen and (min-width: 1440px) {
+  .portfolioPage {
+    margin: 0 auto;
+    width: 1107px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .portfolioPage {
+    padding: 0 11.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolioPage {
+    padding: 0 5.7%;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .portfolioPage {
+    padding: 0 8.5%;
+  }
+}
+/*# sourceMappingURL=portfolio.css.map */

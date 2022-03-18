@@ -1,0 +1,79 @@
+@import "colors";
+@import "screenSize";
+
+.detailPage {
+  @include screen(extra-large) {
+    margin: 0 auto;
+    width: 1107px;
+  }
+  @include screen(large) {
+    padding: 0 11.5%;
+  }
+  @include screen(med) {
+    padding: 0 5.7%;
+  }
+  @include screen(small) {
+    padding: 0 8.5%;
+  }
+}
+
+.detailHero{
+    @include screen(extra-large) {
+        margin-bottom: 115px;
+      }
+      @include screen(large) {
+        margin-bottom: 115px;
+      }
+      @include screen(med) {
+        margin-bottom: 40px;
+      }
+      @include screen(small) {
+        margin-bottom: 40px;
+      }
+}
+
+.detailContent{
+    display: grid;
+    .rightDetail{
+        h3{
+            margin-bottom: 28px;
+        }
+        .projectBackground{
+            margin-bottom: 40px;
+        }
+        .previewdetail{
+            display: grid;
+            gap: 32px;
+        }
+    }
+    @include screen(extra-large) {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 125px;
+      }
+      @include screen(large) {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 125px;
+      }
+      @include screen(med) {
+        grid-template-columns: 1fr;
+       gap: 40px;
+        .projectBackground{
+            display: block !important;
+        }
+      }
+}
+
+.detailContent > div:nth-child(1){
+  @include screen(med) {
+  display: grid;
+  grid-template-areas: 
+  "title cont"
+  "highlit cont"
+  "btn cont"
+  ;
+  column-gap: 60px;
+  }
+  @include screen(small) {
+        display: block;
+  }
+}

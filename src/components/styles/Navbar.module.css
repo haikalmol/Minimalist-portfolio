@@ -1,0 +1,133 @@
+.navbar {
+  margin-top: 64px;
+  margin-bottom: 54px;
+  height: 32px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar {
+    margin: 64px auto 54px;
+    width: 1107px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .navbar {
+    padding: 0 11.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 5.7%;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .navbar {
+    padding: 0 8.5%;
+  }
+}
+
+.navbarItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbarItems li {
+  margin-left: 43px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.navbarItems li a {
+  color: #33323d;
+  text-transform: uppercase;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.16rem;
+  -webkit-transition: color 350ms;
+  transition: color 350ms;
+}
+
+.navbarItems li a:hover {
+  color: #5fb4a2;
+}
+
+.navbarItems li .activeItem {
+  color: #5fb4a2;
+}
+
+@media screen and (max-width: 489px) {
+  .navbarItems {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+  position: relative;
+}
+
+.hamburger .hamburgerMenu {
+  position: absolute;
+  width: 223px;
+  background-color: #33323d;
+  top: 30px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 10;
+  -webkit-transition: opacity 350ms;
+  transition: opacity 350ms;
+}
+
+@media screen and (max-width: 489px) {
+  .hamburger {
+    display: inline;
+  }
+}
+
+.hamburgerItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 0 8px;
+}
+
+.hamburgerItems li {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.hamburgerItems li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.16rem;
+  -webkit-transition: color 350ms;
+  transition: color 350ms;
+}
+/*# sourceMappingURL=navbar.module.css.map */

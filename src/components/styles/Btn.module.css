@@ -1,0 +1,84 @@
+.label {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.16rem;
+}
+
+.primaryButton {
+  background-color: #203a4c;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 210px;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
+}
+
+.primaryButton .icon {
+  background-color: #111f28;
+  padding: 18px 16px;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
+}
+
+.primaryButton .icon path {
+  -webkit-transition: stroke 250ms;
+  transition: stroke 250ms;
+}
+
+.primaryButton .label {
+  color: #fff;
+  padding: 0 37px;
+}
+
+.primaryButton:hover {
+  background-color: #5fb4a2;
+}
+
+.primaryButton:hover .icon {
+  background-color: #479987;
+}
+
+.primaryButton:hover .icon path {
+  stroke: white;
+}
+
+.secondaryButton {
+  border: 1px solid #33323d;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 17px 34px;
+  margin-bottom: 0;
+  -webkit-transition: background-color 250ms;
+  transition: background-color 250ms;
+}
+
+.secondaryButton .label {
+  color: #33323d;
+}
+
+.secondaryButton:hover {
+  background-color: #33323d;
+}
+
+.secondaryButton:hover .label {
+  color: #fff;
+}
+/*# sourceMappingURL=Btn.module.css.map */

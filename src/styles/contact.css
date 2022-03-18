@@ -1,0 +1,133 @@
+@media screen and (min-width: 1440px) {
+  .contactPage {
+    margin: 0 auto;
+    width: 1107px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .contactPage {
+    padding: 0 11.5%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactPage {
+    padding: 0 5.7%;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .contactPage {
+    padding: 0 8.5%;
+  }
+}
+
+.label {
+  font-weight: bold;
+  font-size: 0.8125rem;
+  margin-bottom: 24px;
+}
+
+.input {
+  background-color: rgba(51, 50, 61, 0.1);
+  border: none;
+  outline: none;
+  padding: 17px;
+  min-height: 48px;
+  width: 100%;
+  color: #33323d;
+  margin-bottom: 24px;
+}
+
+.formBtn {
+  background-color: #203a4c;
+  padding: 17px 24px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.16rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    margin-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  h2 {
+    margin-bottom: 24px;
+  }
+}
+
+.getInTouch,
+.contactForm {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 1.5fr;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  padding: 48px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .getInTouch,
+  .contactForm {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+@media screen and (max-width: 489px) {
+  .getInTouch,
+  .contactForm {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+}
+
+.getInTouch .socialIcons,
+.contactForm .socialIcons {
+  margin-top: 68px;
+  width: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.getInTouch .socialIcons path,
+.contactForm .socialIcons path {
+  fill: #33323d;
+}
+
+.getInTouch .socialIcons path,
+.contactForm .socialIcons path {
+  -webkit-transition: fill 350ms;
+  transition: fill 350ms;
+  cursor: pointer;
+}
+
+.getInTouch .socialIcons a:hover path,
+.contactForm .socialIcons a:hover path {
+  fill: #5fb4a2;
+}
+
+.contactForm {
+  margin-bottom: 61px;
+}
+/*# sourceMappingURL=contact.css.map */

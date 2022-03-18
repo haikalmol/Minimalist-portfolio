@@ -1,0 +1,100 @@
+@import "colors";
+@import "screenSize";
+
+.footerContainer {
+  background-color: $GrayishDarkBlue;
+  @include screen(extra-large) {
+    padding: 24px 11.5%;
+  }
+  @include screen(large) {
+    padding: 24px 11.5%;
+  }
+  @include screen(med) {
+    padding: 24px 5.7%;
+  }
+  @include screen(small) {
+    padding: 56px 8.5%;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-content: center;
+  @include screen(extra-large) {
+    width: 1107px;
+    margin: 0 auto;
+  }
+  @include screen(small) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    justify-items: center;
+    > a,
+    ul {
+      margin-bottom: 40px;
+    }
+  }
+  a {
+    transition: color 350ms;
+  }
+  a:hover {
+    color: $SlightlyDesaturatedCyan;
+  }
+}
+
+.footerItems {
+  display: flex;
+  @include screen(small) {
+    flex-direction: column;
+    :last-child {
+      margin-bottom: 0;
+    }
+  }
+  li {
+    margin-left: 43px;
+    align-self: center;
+    @include screen(med) {
+      margin-left: 23px;
+    }
+    @include screen(small) {
+      margin-left: 0;
+      margin-bottom: 32px;
+    }
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "Public Sans", sans-serif;
+      font-weight: 600;
+      font-size: 0.75rem;
+      line-height: 0.875rem;
+      letter-spacing: 0.16rem;
+    }
+  }
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+  @include screen(small) {
+    justify-self: center;
+    justify-content: space-between;
+    width: 104px;
+  }
+  a {
+    margin-left: 16px;
+    color: #fff;
+    @include screen(med) {
+      margin-left: 8px;
+    }
+    @include screen(small) {
+      margin-left: 0;
+    }
+  }
+}
+
+.logoWhite {
+  path {
+    fill: #fff;
+  }
+}
